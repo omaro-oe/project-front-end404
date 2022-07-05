@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <title>bookstore</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
+</head>
+<body>
+  <div id="preloader"></div> 
+    <nav class="nav-bar">
+        <a href="#" class="nav-bar__logo"><i class="fa-solid fa-book"></i>bookly</a>
+       <div class="nav-bar__buttons col-7 ">
+        <ul class="nav-bar__buttons__list">
+            <li class="nav-bar__buttons__list__item"><a class="nav-bar__buttons__list__item__link" href="#home">Home</a></li>
+            <li class="nav-bar__buttons__list__item"><a class="nav-bar__buttons__list__item__link" href="#books">books</a></li>
+            <li class="nav-bar__buttons__list__item"><a class="nav-bar__buttons__list__item__link" href="#arrivals">Arrivals</a></li>
+            <li class="nav-bar__buttons__list__item"><a class="nav-bar__buttons__list__item__link" href="#review">Reviews</a></li>
+            <li class="nav-bar__buttons__list__item"><a class="nav-bar__buttons__list__item__link" href="#contact">Contact</a></li>
+          </ul>
+       </div>
+       <div class="icons">
+        <i class="fa-solid fa-heart"></i>
+        <i class="fa-solid fa-cart-shopping" id="cart-icon"></i>
+        <i id="login-user" class="fa-solid fa-user"></i>
+       </div>
+       
+    </nav>
+    
+    <!--end of nav bar-->
+<div class="login-form">
+<div id="close-btn" class="fa-solid fa-circle-xmark"></div>
+<form class="login-form__des" action="">
+    <h3>Sign in</h3>
+    <p class="enter">E-mail</p> 
+    <input class="box" type="email" placeholder="Enter your E-mail" required>
+    <p class="enter">Password</p>
+    <input class="box" type="password" placeholder="Enter your Password" required>
+    <div class="checkbox">
+        <input class="check" type="checkbox" id="remember">
+        <label for="remember">remember me</label>
+    </div>
+    <input class="button" type="submit" value="sign in">
+    <p class="login-form__qustions">Forget password?<a class="login-form__qustions__links" href="#">Click here</a></p>
+    <p class="login-form__qustions">Do not have an account?<a class="login-form__qustions__links" href="#">Creat account</a></p>
+</form>
+</div>
+ <!--end of login form-->
+<section class="home" id="home">
+    <div class="beside">
+        <div class="content">
+            <h2>upto 75% off</h2>
+            <p class="content__offer">Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic possimus corporis ratione aliquid, commodi cum error ex ut dicta at minima
+             sed autem, culpa, molestiae accusamus fugit cupiditate nam quis!</p>
+            <a href="#"><button class="shop-btn">shop now</button></a>
+        </div>
+        <div class="swiper mySwiper">
+           <div class="swiper-wrapper">
+            <a href="#" class="swiper-slide"><img src="booksimages/6-min.jpg"></a>
+            <a href="#" class="swiper-slide"><img src="booksimages/1-min.jpg"></a>
+            <a href="#" class="swiper-slide"><img src="booksimages/8-min.jpg"></a>
+            <a href="#" class="swiper-slide"><img src="booksimages/13-min.jpg"></a>
+            <a href="#" class="swiper-slide"><img src="booksimages/12-min.jpg"></a>
+           </div>
+           <div class="shelf"></div>
+        </div>
+    </div>
+</section>
+
+<!--sdsdvds-->
+<div class="cart">
+    <p class="cart-name">My cart</p>
+    <div class="cart-content">
+
+       
+    </div>
+    <div class="total">
+        <div class="total-title">total</div>
+        <div class="total-price">$0</div>
+    </div>
+    <button class="btn-buy">Buy</button>
+    <i id="close-cart" class="fa-solid fa-circle-xmark"></i>
+</div>
+
+<!--ufgfhgf-->
+<section class="books" id="books">
+    <h2 class="books-title">best books</h2>
+    <div class="cards row justify-content-center">
+        <div class="product col-sm-12 col-md-4 col-lg-3 col-xl-2 ">
+           <img src="booksimages/11-min.jpg" class="book-photo"> 
+           <p class="book-name">حدث بالفعل 4</p>
+           <span class="price">$4</span>
+           <span class="fa-solid fa-basket-shopping add-cart"></span>
+        </div>
+
+        <div class="product col-sm-12 col-md-4 col-lg-3 col-xl-2">
+            <img  src="booksimages/7-min.jpg  "  class="book-photo"> 
+            <p class="book-name">النيدلان</p>
+            <span class="price">$4</span>
+            <i class="fa-solid fa-basket-shopping add-cart"></i>
+         </div>
+
+         <div class="product col-sm-12 col-md-4 col-lg-3 col-xl-2">
+            <img src="booksimages/12-min.jpg" class="book-photo"> 
+            <p class="book-name"> لوغاريتم</p>
+            <span class="price">$4</span>
+            <i class="fa-solid fa-basket-shopping add-cart"></i>
+         </div>
+
+         <div class="product col-sm-12 col-md-4 col-lg-3 col-xl-2">
+            <img src="booksimages/8-min.jpg" class="book-photo"> 
+            <p class="book-name">حدث بالفعل 1</p>
+            <span class="price">$4</span>
+            <i class="fa-solid fa-basket-shopping add-cart"></i>
+         </div>
+         <div class="product col-sm-12 col-md-4 col-lg-3 col-xl-2">
+            <img src="booksimages/barbara-min.jpg"  class="book-photo"> 
+            <p class="book-name">barbara</p>
+            <span class="price">$4</span>
+            <i class="fa-solid fa-basket-shopping add-cart"></i>
+         </div>
+         <div class="product col-sm-12 col-md-4 col-lg-3 col-xl-2">
+            <img src="booksimages/11-min.jpg"  class="book-photo"> 
+            <p class="book-name">حدث بالفعل 4</p>
+            <span class="price">$4</span>
+            <i class="fa-solid fa-basket-shopping add-cart"></i>
+         </div>
+         <div class="product col-sm-12 col-md-4 col-lg-3 col-xl-2">
+            <img src="booksimages/13-min.jpg"  class="book-photo"> 
+            <p class="book-name">  وهاب الشروق</p>
+            <span class="price">$4</span>
+            <i class="fa-solid fa-basket-shopping add-cart"></i>
+         </div>
+         <div class="product col-sm-12 col-md-4 col-lg-3 col-xl-2">
+            <img src="booksimages/fools-min.jpg"  class="book-photo"> 
+            <p class="book-name">  fools</p>
+            <span class="price">$4</span>
+            <i class="fa-solid fa-basket-shopping add-cart"></i>
+         </div>
+         <div class="product col-sm-12 col-md-4 col-lg-3 col-xl-2">
+            <img src="booksimages/5.jpg"  class="book-photo"> 
+            <p class="book-name">  البستان</p>
+            <span class="price">$4</span>
+            <i class="fa-solid fa-basket-shopping add-cart"></i>
+         </div>
+         <div class="product col-sm-12 col-md-4 col-lg-3 col-xl-2">
+            <img src="booksimages/11-min.jpg"  class="book-photo"> 
+            <p class="book-name">حدث بالفعل 4</p>
+            <span class="price">$4</span>
+            <i class="fa-solid fa-basket-shopping add-cart"></i>
+         </div>
+    </div>
+</section>
+ <!--ends of cards-->
+    <section style="margin: 0;" class="come" id="arrivals">
+        <p class="books-title special">New arrivals</p>
+       <div class="row m-0">
+     <div class="col-5">
+    <img src="booksimages/detail.png" alt="">
+     </div>
+     <div class="col-6">
+     <div data-am-cardslider>
+        <input type="radio" name="card-slider" id="card-slider-1" />
+        <input type="radio" name="card-slider" id="card-slider-2" checked />
+        <input type="radio" name="card-slider" id="card-slider-3" />
+        <div class="cs-slide-container">
+          <label for="card-slider-1" class="cs-slide">
+            <div class="cs-slide-content">
+              <div class="swipe"><img class="" src="booksimages/barbara-min.jpg"></div>
+            </div>
+          </label>
+          <label for="card-slider-2" class="cs-slide">
+            <div class="cs-slide-content">
+              <div class="swipe"><img  src="booksimages/13-min.jpg"></div>
+            </div>
+          </label>
+          <label for="card-slider-3" class="cs-slide">
+            <div class="cs-slide-content">
+              <div class="swipe"><img  src="booksimages/fools-min.jpg"></div>
+            </div>
+          </label>
+        </div>
+        <div class="cs-indicator-container">
+          <label for="card-slider-1" class="cs-indicator"></label>
+          <label for="card-slider-2" class="cs-indicator"></label>
+          <label for="card-slider-3" class="cs-indicator"></label>
+        </div>
+      </div>
+    </div>
+    </div>
+    </section>
+<!--end of arrival section-->
+<section class="review" id="review">
+  <p class="books-title special star">Reviews</p>
+  <div class="rev-section">
+    
+    
+    <div class="reviews">
+    
+    <div class="review">
+       <div class="head-review">
+          <img class="rev-img" src="booksimages/rev1.jpg" width="250px">
+       </div>
+       <div class="body-review">
+          <div class="name-review">Mohamed</div>
+          <div class="place-review">Egypt</div>
+          <div class="rating">
+             <i class="fas fa-star"></i>
+             <i class="fas fa-star"></i>
+             <i class="fas fa-star"></i>
+             <i class="fas fa-star"></i>
+             <i class="fas fa-star-half"></i>
+          </div>
+          <div class="desc-review">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Obcaecati eligendi suscipit illum officia ex eos.</div>
+       </div>
+    </div>
+    <div class="review">
+       <div class="head-review">
+          <img class="rev-img" src="booksimages/rev2.jpg" width="250px">
+       </div>
+       <div class="body-review">
+          <div class="name-review">Ahmed</div>
+          <div class="place-review">Egypt</div>
+          <div class="rating">
+             <i class="fas fa-star"></i>
+             <i class="fas fa-star"></i>
+             <i class="fas fa-star"></i>
+             <i class="fas fa-star"></i>
+             <i class="fas fa-star"></i>
+          </div>
+          <div class="desc-review">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Obcaecati eligendi suscipit illum officia ex eos.</div>
+       </div>
+    </div>
+    <div class="review">
+       <div class="head-review">
+          <img class="rev-img" src="booksimages/rev3.jpg" width="250px">
+       </div>
+       <div class="body-review">
+          <div class="name-review">Taha</div>
+          <div class="place-review">Egypt</div>
+          <div class="rating">
+             <i class="fas fa-star"></i>
+             <i class="fas fa-star"></i>
+             <i class="fas fa-star"></i>
+             <i class="fas fa-star"></i>
+             <i class="fas fa-star-half"></i>
+          </div>
+          <div class="desc-review">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Obcaecati eligendi suscipit illum officia ex eos.</div>
+       </div>
+    </div>
+    
+    </div>
+    
+    </div>
+</section>
+<!--end of review section-->
+<section  class="contact-us" id="contact">
+  <p class="books-title special star ">Contact Us</p>
+  <div class="row">
+  <div class="contact-us__form col-lg-6 col-sm-12 col-xl-6 ">
+  <form onsubmit="event.preventDefault();" class="information">
+    <p class="contact-us__name">contact us</p>
+
+    <label class="info" for="name">Name:</label>
+    <input class="inputs" type="text" id="name" placeholder="enter your name" required>
+    <small class="error"></small>
+
+    <label class="info" for="email">E-mail:</label>
+    <input class="inputs" type="email" id="email" placeholder="enter your email" required>
+    <small class="error"></small>
+
+    <label class="info" for="message">message:</label>
+    <textarea class="inputs scroll" id="message" placeholder="what is your message?" rows="4" required></textarea>
+    <small class="error"></small>
+
+    <div class="center">
+      <input id="sub" type="submit" value="send message">
+      <p id="success"></p>
+    </div>
+  </form>
+</div>
+<div style=" margin-top: 5%;" class="navigation col-xl-6 col-lg-6  ">
+  <iframe  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3412.4279695140694!2d29.907012514958648!3d31.208870481473745!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14f5c38a0562fe85%3A0xa34cc632ec23e7!2sBibliotheca%20Alexandrina!5e0!3m2!1sen!2seg!4v1656924225656!5m2!1sen!2seg" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+</div>
+</div>
+</section>
+<!--end of contact-->
+<section class="subscrib">
+<p class="subscrib__p">WE MAKE IT EASY TO EXPRIENCE CREATIVITY</p>
+<p class="subscrib__s">STYLISH NEW DESIGN</p>
+<form onsubmit="event.preventDefault();validateForm()" class="subscrib__form">
+  <input class="mail" type="email" placeholder="enter your email">
+  <button class="subscrib__btn">subscrib</button>
+</form>
+</section>
+<!--end of sub.-->
+<div class="container-fluid back-color">
+  <div class="row top">
+      <div class="col-sm-3 col-lg-3 col-md-4 col-xs-12 pade">
+         <div>
+          <img src="booksimages/bookly.png">
+         </div>
+          <p class="web-detail">Lorem ipsum dolor sit amet,<br>
+          consectetuer adipiscing elit. Donec<br> 
+          odio. Quisque volutpat mattis eros.<br> 
+          Nullam malesuada erat ut turpis.<br> 
+          Suspendisse urna nibh, viverra non,<br> 
+          semper suscipit, posuere a, pede ...</p>
+      </div>
+      <div class="col-sm-3 col-lg-3 col-md-4 col-xs-12 pade">
+          <p class="addre">Contact-us</p>
+          <p class="ff"><span class="fff">Address:</span> 123 Fake Street, New York</p>
+          <p class="ff"><span class="fff">Phone:</span> (08) 8827 633354</p>
+          <p class="ff"><span class="fff">Fax:</span> (08) 8827 633354</p>
+          <p class="ff"><span class="fff">Mail:</span> contact@yoursite.com</p>
+          <p class="ff"><span class="fff">Openning:</span> 8:00 - 19:00, Mon - Sat></p>
+      </div>
+      <div class="col-sm-3 col-lg-2 col-md-3 col-xs-12 pade">
+          <p class="addre">Information</p>
+          <p class="f">About us</p><br>
+          <p class="f">Legal notice</p><br>
+          <p class="f">addresses</p><br>
+          <p class="f">order</p><br>
+          <p class="f">payment</p><br>
+          <p class="f">suppliers</p><br>
+      </div>
+      <div class="col-sm-3 col-lg-2 col-md-3 col-xs-12 pade">
+          <p class="addre">My account</p>
+          <p class="f">Delivery</p><br>
+          <p class="f">Legal notice</p><br>
+          <p class="f">About us</p><br>
+          <p class="f">prices drop</p><br>
+          <p class="f">new product</p><br>
+          <p class="f">best sales</p><br>
+      </div>
+      <div class="col-sm-3 col-lg-2 col-md-3 col-xs-12 pade">
+          <p class="addre">Company</p>
+          <p class="f">My account</p><br>
+          <p class="f">My cart</p><br>
+          <p class="f">Identify</p><br>
+          <p class="f">Order</p><br>
+          <p class="f">Contact us</p><br>
+          <p class="f">Addresses</p><br>
+      </div>
+  </div>
+  <hr class="space-two">
+  <div class="extra-information row">
+      <p class="col-xs-12 col-sm-3 extra-information__details">returns</p>
+      <p class="col-xs-12 col-sm-3 extra-information__details">order hestory</p>
+      <p class="col-xs-12 col-sm-3 extra-information__details">site map</p>
+      <p class="col-xs-12 col-sm-3 extra-information__details">testimonial</p>
+  </div>
+<p class="copyright">Copyright © 2021 Bookly Store. All Rights Reserved.</p>
+<div class="payment-method">
+<img src="booksimages/demo2-payment.jpg"class="how-pay">
+</div>
+</div> 
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+  
+  var loader = document.getElementById('preloader');
+window.addEventListener('load', function(){
+  loader.style.display = 'none';
+});
+
+const nameInput = document.querySelector('#name');
+const emailInput = document.querySelector('#email');
+const messageInput = document.querySelector('#message');
+const success = document.querySelector('#success');
+const error = document.querySelectorAll('.error');
+
+function validateForm(){
+  clearMessages();
+  if(nameInput.value.length < 1){
+    error[0].innerText = "name cannot be blank";
+    nameInput.classList.add('error-border')
+  };
+};
+
+
+const menu = document.querySelector('.nav-bar__buttons__list')[0];
+const menuBtn = document.querySelector('.fa-grip-lines')[0];
+const removeMenu = document.querySelector('.remove')[0];
+const ic = document.querySelector('.nav-bar');[0]
+
+menuBtn.onclick = ()=>{
+  menu.classList.add('bar');
+}
+</script>
+
+
+
+
+
+
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/java.js"></script>
+</body>
+</html>
